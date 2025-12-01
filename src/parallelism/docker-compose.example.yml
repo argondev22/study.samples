@@ -1,0 +1,7 @@
+services:
+  app:
+    image: argon/sample.parallelism
+    build: .
+    volumes:
+      - .:/workspace
+    command: ["sleep", "infinity"]
