@@ -1,0 +1,12 @@
+services:
+  app:
+    image: argon/sample.twilio
+    build: .
+    environment:
+      - TWILIO_ACCOUNT_SID=ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      - TWILIO_AUTH_TOKEN=your_auth_token
+      - TWILIO_PHONE_NUMBER=+15017122661
+      - TWIML_URL=http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient
+    volumes:
+      - .:/workspace
+    command: ["sleep", "infinity"]
