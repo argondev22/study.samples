@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    image: argon/test_flask-gunicorn-setup
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+    restart: unless-stopped
