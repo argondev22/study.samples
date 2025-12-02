@@ -1,0 +1,7 @@
+services:
+  src:
+    build: .
+    image: argon/test_grpc-communication
+    volumes:
+      - ./src:/go/src
+    command: ["sleep", "infinity"]
