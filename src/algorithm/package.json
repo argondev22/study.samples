@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "Sample algorithm implementations",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "devDependencies": {
     "@types/node": "^20.0.0",
     "ts-node": "^10.9.0",
     "typescript": "^5.0.0"
   },
-  "keywords": ["algorithm", "typescript"],
+  "keywords": [
+    "algorithm",
+    "typescript"
+  ],
   "author": "",
   "license": "MIT"
 }

@@ -6,7 +6,10 @@
  * 連結リストのノードクラス
  */
 class ListNode {
-  constructor(public value: number, public next: ListNode | null = null) {}
+  constructor(
+    public value: number,
+    public next: ListNode | null = null
+  ) {}
 }
 
 /**
@@ -190,7 +193,7 @@ class LinkedList {
    * リストの内容を文字列として表示
    */
   toString(): string {
-    return this.toArray().join(' -> ') + ' -> null';
+    return this.toArray().join(" -> ") + " -> null";
   }
 
   /**
@@ -213,12 +216,12 @@ class LinkedList {
 
 // 使用例とテスト
 function main(): void {
-  console.log('=== 連結リストのデモ ===\n');
+  console.log("=== 連結リストのデモ ===\n");
 
   const list = new LinkedList();
 
   // 要素を追加
-  console.log('1. 要素を追加:');
+  console.log("1. 要素を追加:");
   list.append(1);
   list.append(2);
   list.append(3);
@@ -227,34 +230,34 @@ function main(): void {
   console.log(`サイズ: ${list.getSize()}\n`);
 
   // 指定位置に挿入
-  console.log('2. 位置1に要素10を挿入:');
+  console.log("2. 位置1に要素10を挿入:");
   list.insertAt(10, 1);
   console.log(`リスト: ${list.toString()}\n`);
 
   // 要素を検索
-  console.log('3. 要素の検索:');
+  console.log("3. 要素の検索:");
   console.log(`値2の位置: ${list.find(2)}`);
   console.log(`値5の位置: ${list.find(5)} (見つからない)\n`);
 
   // 要素を取得
-  console.log('4. 位置2の要素を取得:');
+  console.log("4. 位置2の要素を取得:");
   console.log(`位置2の値: ${list.get(2)}\n`);
 
   // 要素を削除
-  console.log('5. 要素を削除:');
+  console.log("5. 要素を削除:");
   console.log(`位置1の要素を削除: ${list.removeAt(1)}`);
   console.log(`リスト: ${list.toString()}`);
   console.log(`値3を削除: ${list.remove(3)}`);
   console.log(`リスト: ${list.toString()}\n`);
 
   // 逆順にする
-  console.log('6. リストを逆順にする:');
+  console.log("6. リストを逆順にする:");
   list.reverse();
   console.log(`逆順: ${list.toString()}\n`);
 
   // 配列として取得
-  console.log('7. 配列として取得:');
-  console.log(`配列: [${list.toArray().join(', ')}]`);
+  console.log("7. 配列として取得:");
+  console.log(`配列: [${list.toArray().join(", ")}]`);
 }
 
 // デモを実行

@@ -1,13 +1,11 @@
 {
-    "name": "sample.gmail-api",
-    "dockerComposeFile": "../docker-compose.yml",
-    "service": "app",
-    "workspaceFolder": "/workspace",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "golang.go"
-            ]
-        }
+  "name": "sample.gmail-api",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go"]
     }
+  }
 }

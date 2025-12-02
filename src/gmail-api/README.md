@@ -1,14 +1,15 @@
 ﻿# Gmail API
+
 Google Cloud Gmail API のサンプルコード
 
 ## 環境変数
 
-| 名前                             | 説明 　　　　　　                                                            | 必須 | 備考  |
-| -------------------------------- | -------------------------------------------------------------------------- | ---- | ------------ |
-| `GOOGLE_CLOUD_CREDENTIAL_PATH`   | Google Cloud Gmail API の OAuth 2.0 クライアント ID（JSON ファイル）のパス    | ✔    |              |
-| `GOOGLE_CLOUD_ACCESS_TOKEN_PATH` | Google Cloud Gmail API のアクセストークン（JSON ファイル）のパス              |     | 自動で生成される（手順を参照）   |
-| `GOOGLE_CLOUD_PROJECT_NAME`      | Google Cloud のプロジェクト名 　　　　　　　　　　　                          |      | `watch` APIを利用する際に必須 |
-| `GOOGLE_CLOUD_WATCH_TOPIC_NAME`  | Google Cloud Pub/Sub の Gmail 通知先のトピック名 　　　　　　　　　　　        |     |  `watch` APIを利用する際に必須 |
+| 名前                             | 説明 　　　　　　                                                          | 必須 | 備考                           |
+| -------------------------------- | -------------------------------------------------------------------------- | ---- | ------------------------------ |
+| `GOOGLE_CLOUD_CREDENTIAL_PATH`   | Google Cloud Gmail API の OAuth 2.0 クライアント ID（JSON ファイル）のパス | ✔   |                                |
+| `GOOGLE_CLOUD_ACCESS_TOKEN_PATH` | Google Cloud Gmail API のアクセストークン（JSON ファイル）のパス           |      | 自動で生成される（手順を参照） |
+| `GOOGLE_CLOUD_PROJECT_NAME`      | Google Cloud のプロジェクト名 　　　　　　　　　　　                       |      | `watch` APIを利用する際に必須  |
+| `GOOGLE_CLOUD_WATCH_TOPIC_NAME`  | Google Cloud Pub/Sub の Gmail 通知先のトピック名 　　　　　　　　　　　    |      | `watch` APIを利用する際に必須  |
 
 ---
 
@@ -29,7 +30,6 @@ Google Cloud Gmail API のサンプルコード
 6. アクセストークン（`access_token.json`）が生成される（次回からはこのアクセストークンを利用するため、`5.`の作業は不要）。
 
 ## 参考
+
 - [GCP の Pub/Sub と Gmail APIを使って、メールをトリガーにイベントを実行する](https://qiita.com/Kentaro91011/items/e8f9c5764ff6792c1d98)
 - [Go クイックスタート](https://developers.google.com/workspace/gmail/api/quickstart/go?hl=ja)
-
-
